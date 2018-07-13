@@ -4,6 +4,7 @@ try:
 except ImportError:
     print("[¡] Error importing DorkDef module")
     exit()
+    
 try:
     import argparse
 except ImportError:
