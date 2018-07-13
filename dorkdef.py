@@ -10,10 +10,12 @@ try:
     from google import google
 except ImportError:
     print("Error importing google module")
+    
 try:
     from random import randint
 except ImportError:
     print("Error importing randit")
+    
 #---------------------------CLASS DORK---------------------------
 class dork:
 
@@ -51,7 +53,6 @@ class dork:
                   
             search_qry = dork[i]
             search_qry = search_qry.replace('\n', ' ').replace('\r', '') #avoid \n
-            
             i+=1
             Impact = dork[i]           
             i+=1
@@ -60,14 +61,13 @@ class dork:
 #---------------------------google configure and search---------------------------
 
             query = search_qry + " inurl:" + str(self.__url) #what dorkme will search in google, target selected + inurl (only results of that url) and finally dork
-    
+  
             i = 0  
             if i != 0: 
                 timet = randint(50,65)
                 print("Sleeping {} seconds".format(timet))
                 time.sleep(timet) 
-                i+=1
-                     
+                i+=1    
                 if i > 100:
                     timet = randint(180,240)
                     time.sleep(timet)
@@ -83,14 +83,10 @@ class dork:
             name_file = self.__category + "_report.txt" #open file where report of X dictionary will be written
 
 #---------------------------SHOW AND SAVE RESULTS---------------------------
-            if self.__response: #only execute this loop if google have response 
-                    
+            if self.__response: #only execute this loop if google have response                
                 print("\n")
-
                 name_file = "results/" + name_file
-
                 for j in self.__response: # for each link in response....
-
                     Impacts = "" # asign colors
                     if 'high' in Impact.lower():
                         Impacts = "\033[0;31;47mHIGH\033[0m" 
