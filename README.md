@@ -15,8 +15,6 @@ python DorkMe.py --url bible-history.com --dorks all -v (test all)
 # about
 DorkMe is a tool designed by blueudp with the purpose of accelerating the search of vulnerabilities with google.
 
-Remember that dorkme is beta, is full of errors, and is not yet optimized for use
-
 Any idea, failure etc please report to tg: blueudp
 
 dork folder contains dorks to search, result folder contains results of DorkMe execution
