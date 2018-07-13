@@ -128,7 +128,7 @@ class dork:
                 i=1                 
                 if self.__verbose:
                     print("\n[*] Searching using {}".format(search_qry))           
-                self.__response = ['hola', 'pepe']
+                self.__response = google.search(query)
                        
 #---------------------------check response and write to file---------------------------
 
