@@ -49,8 +49,7 @@ class dork:
         
 #---------------------------ASIGN FILE DORKS, INFO ETC TO VARIABLES---------------------------
 
-        for i in range(0, lines, 4): #file structure is "dork, impact, description and blank line, so its asign line 1 to dork etc"
-                  
+        for i in range(0, lines, 4): #file structure is "dork, impact, description and blank line, so its asign line 1 to dork etc"           
             search_qry = dork[i]
             search_qry = search_qry.replace('\n', ' ').replace('\r', '') #avoid \n
             i+=1
@@ -100,7 +99,6 @@ class dork:
  
                     print(resultones) #print results
                     with open(name_file, 'a') as report_file:
-
                         report_file.write(resultone) #then write to file
 
                 report_file.close() #close report file
