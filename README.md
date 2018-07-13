@@ -1,6 +1,6 @@
 # DorkMe
 use: python DorkMe.py --help
-example: use:python DorkMe.py --url bible-history.com --dorks vulns -v 
+example::python DorkMe.py --url bible-history.com --dorks vulns -v 
 
 DorkMe is a tool designed by blueudp with the purpose of accelerating the search of vulnerabilities with google.
 
