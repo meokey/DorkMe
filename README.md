@@ -1,4 +1,7 @@
 # DorkMe
+dependencies:
+     pip install google
+     pip install argparse
 use: python DorkMe.py --help
 example::python DorkMe.py --url bible-history.com --dorks vulns -v 
 
