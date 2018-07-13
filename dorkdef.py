@@ -26,6 +26,7 @@ class dork:
           self.__category="" #category (deprecated systems, Info etc)
           self.__response ="No results" #used in line 61 to check results
           self.__noban=ban
+          self.__bucle=0
 
 #---------------------------MAIN FUNC---------------------------
 
@@ -61,18 +62,18 @@ class dork:
 
             query = search_qry + " inurl:" + str(self.__url) #what dorkme will search in google, target selected + inurl (only results of that url) and finally dork
   
-            i = 0  
-            if i != 0: 
+ 
+            if self.__bucle != 0: 
                 timet = randint(50,65)
                 print("Sleeping {} seconds".format(timet))
                 time.sleep(timet) 
-                i+=1    
-                if i > 100:
+                self.__bucle+=1    
+                if self.__bucle > 100:
                     timet = randint(180,240)
                     time.sleep(timet)
                     print("Sleeping {} seconds (100 request reached)".format(timet))
             else: 
-                i=1                 
+                self.__bucle+=1                
                 if self.__verbose:
                     print("\n[*] Searching using {}".format(search_qry))           
                 self.__response = google.search(query)
