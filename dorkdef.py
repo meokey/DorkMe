@@ -41,10 +41,8 @@ class dork:
         except IOError:
             print("[¡] 'IOError'Error opening FILE")
             exit()
-
-
+            
         lines = len(open(file_to_open).readlines()) # count lines (will be used in line 44)
-
         dork = filex.readlines() #asign openned lines to dork list
         
 #---------------------------ASIGN FILE DORKS, INFO ETC TO VARIABLES---------------------------
@@ -62,16 +60,14 @@ class dork:
 #---------------------------google configure and search---------------------------
 
             query = search_qry + " inurl:" + str(self.__url) #what dorkme will search in google, target selected + inurl (only results of that url) and finally dork
-
-            
+    
             i = 0  
             if i != 0: 
                 timet = randint(50,65)
                 print("Sleeping {} seconds".format(timet))
                 time.sleep(timet) 
                 i+=1
-                
-            
+                     
                 if i > 100:
                     timet = randint(180,240)
                     time.sleep(timet)
@@ -91,12 +87,7 @@ class dork:
                     
                 print("\n")
 
-
                 name_file = "results/" + name_file
-
-
-
-
 
                 for j in self.__response: # for each link in response....
 
@@ -114,14 +105,12 @@ class dork:
                     print(resultones) #print results
                     with open(name_file, 'a') as report_file:
 
-
                         report_file.write(resultone) #then write to file
 
                 report_file.close() #close report file
             else:
                 print("[*] no results\n")
                 
-
         filex.close() #close dork dictionary
 
 #---------------------------CHECK DORKS TYPES SELECTED BY USER---------------------------
@@ -153,8 +142,6 @@ class dork:
         if "mydorks" in self.__dork:
             mydorks=1
 
-
-        
         if Deprecated: #if deprecated is True, (use have selected it), it execute mainfunc with deprecated category, same with info, vulns etc
             print("\033[1;33;40m[*] Using 'Deprecated' Dorks \033[0m " + "\n")
             self.__category = "Deprecated"
@@ -178,7 +165,6 @@ class dork:
             self.__category = "mydorks"
             self.mainfunc()  
               
-    
 if __name__ == "__main__":  #have no sense execute this directly, so...
      print("[¡] This is a module¡, use DorkMe.py instead")
      exit()
