@@ -1,0 +1,4 @@
+filetype:php inurl:tiki-index.php +sirius +1.9.*
+High
+Finds servers vulnerable to the CVE-2007-5423 exploit
+
