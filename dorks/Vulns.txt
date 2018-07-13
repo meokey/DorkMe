@@ -1,3 +1,7 @@
+inurl:php?id=
+HIGH
+SQLi
+
 inurl:"q=user/password
 medium
 for finding drupal
