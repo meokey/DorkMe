@@ -15,9 +15,9 @@ to avoid ban, between each request there are between 50 and 65 seconds, and betw
 if you want to add new dorks put it in one of the files in the dorks folder (preferable in its category), if it is not, you can add it to mydorks.txt.
     to add it: in the first line the dork, in the second the severity, high , medium or low, and finally its description, look at the other files to do it correctly
 EXAMPLE:
-    inurl:php?id=
-    high
-    SQLi
+    inurl:php?id= [enter]
+    high [enter]
+    SQLi [enter]
     
     inurl...
 
