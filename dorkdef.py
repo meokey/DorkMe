@@ -22,9 +22,10 @@ class dork:
           self.__dork=dorks #selected dorks                  
           self.__verbose=verbose #verbose
           self.__category="" #category (deprecated systems, Info etc)
-          self.__response ="No results" #used in line 61 to check results
+          self.__response=[]
           self.__noban=ban
-
+          self.__ifbucle=0
+          
 #---------------------------MAIN FUNC---------------------------
 
     def mainfunc(self):  
@@ -55,7 +56,7 @@ class dork:
             search_qry = search_qry.replace('\n', ' ').replace('\r', '') #avoid \n
             
             i+=1
-            Impact = dork[i]           
+            Impact= dork[i]
             i+=1
             Description = dork[i]           
 
@@ -63,24 +64,28 @@ class dork:
 
             query = search_qry + " inurl:" + str(self.__url) #what dorkme will search in google, target selected + inurl (only results of that url) and finally dork
 
+
             
-            i = 0  
-            if i != 0: 
+
+            if self.__ifbucle > 0:  
                 timet = randint(50,65)
                 print("Sleeping {} seconds".format(timet))
                 time.sleep(timet) 
-                i+=1
-                
+
+                self.__ifbucle+=1
             
-                if i > 100:
+                if self.__ifbucle > 100:
                     timet = randint(180,240)
                     time.sleep(timet)
-                    print("Sleeping {} seconds (100 request reached)".format(timet))
-            else: 
-                i=1                 
+                    print("Sleeping {} seconds (100 request reached)".format(timet))       
                 if self.__verbose:
-                    print("\n[*] Searching using {}".format(search_qry))           
-                self.__response = ['hola', 'pepe']
+                    print("\n[*] Searching using {}".format(search_qry))         
+                self.__response = google.search(query)
+            else:
+                self.__ifbucle+=1        
+                if self.__verbose:
+                    print("\n[*] Searching using {}".format(search_qry))         
+                self.__response = google.search(query)
                        
 #---------------------------check response and write to file---------------------------
 
@@ -138,13 +143,14 @@ class dork:
         Login=0
         Info=0
         Vulns=0
-
+        mydorks=0
 
         if "all" in self.__dork: # if user selected all (dorks), everything is True
             Login=1
             Vulns=1
             Info=1
             Deprecated=1
+            mydorks=1
         if "login" in self.__dork: #if user selected login, its True etc
             Login=1
         if "vulns" in self.__dork:
