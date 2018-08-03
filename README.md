@@ -18,6 +18,8 @@ DorkMe is a tool designed by blueudp with the purpose of accelerating the search
 Any idea, failure etc please report to telegram: blueudp
 
 dork folder contains -> dorks to search, result folder contains -> results of DorkMe execution
+
+Tested in ParrotOS
 # is beta!
 Remember dorkme is beta,to avoid bans dorkme wait about 1 minute on each request and 3 minutes every 100 requests
 
