@@ -114,7 +114,7 @@ class dork:
         for j in self.__dork:
             self.__dork = j.lower()
 
-        print("Remember that DorkMe is Beta, still not implemented for pentesting, only PoC\n Read README¡¡¡ \n please send any proposal, bug etc to telegram: blueudp\n")
+        print("Remember that DorkMe is Beta!\n Read README¡¡¡ \n please send any proposal, bug etc to telegram: blueudp\n")
         Deprecated=0 # all is false
         Login=0
         Info=0
