@@ -2,7 +2,7 @@
 <a href="https://asciinema.org/a/XT6U3c9XqwSNN4vTetxssc0e9" target="_blank"><img src="https://asciinema.org/a/XT6U3c9XqwSNN4vTetxssc0e9.png" /></a>
 
 # dependencies
-     pip install google
+     pip install Google-Search-API
      pip install argparse
 It is highly recommended to add more dorks for an effective search, keep reading to see how
 
