@@ -10,7 +10,7 @@ except ImportError:
 try:
     from google import google
 except ImportError:
-    print("Error importing google module, try: pip install google")
+    print("Error importing google module, try: pip install Google-Search-API")
     exit()
     
 try:
