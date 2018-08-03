@@ -5,17 +5,19 @@ try:
     import time
 except ImportError:
     print("Error importing time")
+    exit()
     
 try:
     from google import google
 except ImportError:
-    print("Error importing google module")
+    print("Error importing google module, try: pip install google")
+    exit()
     
 try:
     from random import randint
 except ImportError:
     print("Error importing randit")
-    
+    exit()
 #---------------------------CLASS DORK---------------------------
 class dork:
 
