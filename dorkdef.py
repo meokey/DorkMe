@@ -74,6 +74,11 @@ class dork:
                     timet = randint(180,240)
                     time.sleep(timet)
                     print("Sleeping {} seconds (100 request reached)".format(timet))
+                    
+                if self.__verbose:
+                    print("\n[*] Searching using {}".format(search_qry))           
+                self.__response = google.search(query)
+                
             else: 
                 self.__bucle+=1                
                 if self.__verbose:
