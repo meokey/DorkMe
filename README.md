@@ -9,7 +9,9 @@ It is highly recommended to add more dorks for an effective search, keep reading
 
 python DorkMe.py --help
 
-example:python DorkMe.py --url target.com --dorks vulns -v (recommended for test)
+Examples:
+
+python DorkMe.py --url target.com --dorks vulns -v (recommended for test)
 
 python DorkMe.py --url target.com --dorks Deprecated,Info -v (multiple dorks)
 
@@ -47,4 +49,5 @@ EXAMPLE:
     
 # Contact Me
 Telegram: blueudp
+
 Twitter: https://twitter.com/blueudp
