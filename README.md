@@ -25,7 +25,7 @@ Any idea, failure etc please report to telegram: blueudp
 
 dork folder contains -> dorks to search, result folder contains -> results of DorkMe execution
 
-Tested in ParrotOS
+Tested in ParrotOS and Kali Linux 2.0
 # Beta Version
 Remember DorkMe is beta, to avoid bans DorkMe wait about 1 minute on each request and 3 minutes every 100 requests
 
