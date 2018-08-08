@@ -33,7 +33,9 @@ Remember DorkMe is beta, to avoid bans DorkMe wait about 1 minute on each reques
 
 If you want to add new dorks put it in one of the files in the dorks folder (preferable in its category), if it is not, you can add it to mydorks.txt.
     to add it: in the first line add the dork, in the second the severity: high , medium or low, and finally its description, look at the other files to do it correctly
-    
+
+# Termux
+To install on termux run pip2 and python2 instead of pip and python
 EXAMPLE:
 
     inurl:php?id= [enter]
