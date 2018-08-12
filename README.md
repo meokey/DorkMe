@@ -65,7 +65,7 @@ For example, SQL injection usually has this structure in the url "file.php? Id =
 List of special operators: https://ahrefs.com/blog/google-advanced-search-operators/
 
 # Contact Me
-Name: Eduardo
+Name: Eduardo Pérez-Malumbres
 
 Telegram: @blueudp
 
